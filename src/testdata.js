@@ -1,0 +1,32 @@
+const testdata = [
+    { id: "1",
+      kaupunki: 'Ayia Napa', 
+      arvo: 18,
+      viikko: '15',
+      kuukausi: 'April',
+      testauspaiva: '2020-04-15',
+      saatila: 'Sunny'},
+    { id: "2",
+      kaupunki: 'Larnaka', 
+      arvo: 17.8,
+      viikko: '15',
+      kuukausi: 'April',
+      testauspaiva: '2020-04-16',
+      saatila: 'Sunny'},
+    { id: "3",
+      kaupunki: 'Paphos', 
+      arvo: 17.3,
+      viikko: '15',
+      kuukausi: 'April',
+      testauspaiva: '2020-04-17',
+      saatila: 'Cloudy'},
+    { id: "4",
+      kaupunki: 'Ayia Napa', 
+      arvo: 18,
+      viikko: '15',
+      kuukausi: 'April',
+      testauspaiva: '2020-04-18',
+      saatila: 'Rainy'}
+];
+
+export default testdata;

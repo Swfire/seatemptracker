@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Comfortaa:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 30em;
+  background-color: #00ffff;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Comfortaa', cursive;
+}
+
+.App > * {
+  flex: 1 1 auto;
+}
+
+.kulukortti {
+  /*padding: 1em 0 1em 1em ;*/
+  border-bottom: 1px solid rgb(0, 0, 0);
+  display: flex;
+
+}
+
+.kulukortti__rivi {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kulukortti__kaupunki, .kulukortti__arvo {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.kulukortti__testauspaiva, .kulukortti__viikko, .kulukortti__kuukausi, .kulukortti__saatila {
+  font-size: 90%;
+  color: #666;
+}
+
+.kulukortti > div {
+  flex: 1 1 auto;
+  padding: 1em;
+}
+
+.kulukortti__linkki {
+  max-width: 1em;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.kulukortti:hover .kulukortti__linkki {
+  display: flex;
+}
+
+.kulukortti__linkki a {
+  color: black;
+}

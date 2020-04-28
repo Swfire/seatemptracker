@@ -1,0 +1,13 @@
+.menu {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 4em;
+    min-height: 3em;
+    align-items: center;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-width: thick;
+    border-color: rgb(0, 0, 0);
+  }

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Comfortaa:wght@300&display=swap');
+
+.settings {
+    padding: 2em;
+}
+.SettingsForm {
+    display: flex;
+    margin-top: 0.5em;
+}
+
+.settings h3 {
+    margin-top: 0.5em;
+}
+
+.setting__items {
+    padding: 0.5em;
+    font-size: 1.1em;
+}
+
+.setting__items > div {
+    padding: 0.2em;
+    font-size: 1.1em;
+    border-radius: 0.2em;
+}
+
+.setting__items > div:nth-child(odd) {
+    background-color: rgb(140, 200, 224);
+}
+
+
+.SettingsForm input {
+    flex: 1 1 auto;
+    padding: 0.5em;
+    border: 1px solid rgb(33, 21, 209);
+    border-radius: 0.3em;
+    font-size: 90%;
+    font-family: 'Comfortaa';
+    box-sizing: border-box;
+    outline: none;
+}

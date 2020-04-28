@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Comfortaa:wght@300&display=swap');
+
+.Header {
+    background-color: #2226ee;
+    color: #0a0a0a;
+    display: flex;
+    font-size: 160%;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-width: thick;
+    border-color: rgb(0, 0, 0);
+    justify-content: center;
+    padding: 0.5em;
+    max-height: 3em;
+    min-height: 3em;
+    align-items: center;
+    font-family: 'Amatic SC', cursive;
+  }

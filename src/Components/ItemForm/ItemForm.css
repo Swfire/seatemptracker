@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Comfortaa:wght@300&display=swap');
+
+.itemform {
+    display: flex;
+    flex-direction: column;
+}
+
+.itemform__row {
+    display: flex;
+}
+
+.itemform__row > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5em 0.3em;
+    flex: 1 1 auto;
+}
+
+.itemform input, .itemform select {
+    padding: 0.5em;
+    border: 1px solid rgb(33, 21, 209);
+    border-radius: 0.3em;
+    font-size: 90%;
+    font-family: 'Comfortaa';
+    box-sizing: border-box;
+    outline: none;
+}
+
+.itemform input[type="date"]::-webkit-clear-button, 
+input[type="month"]::-webkit-clear-button {
+    display: none;
+}
+
+.itemform input[type="month"]::-webkit-clear {
+    display: none;
+}
+
+.itemform input[name="testauspaiva"]::-webkit-outer-spin-button, 
+input[name="testauspaiva"]::-webkit-inner-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+
+.itemform input[name="viikko"],
+input[name="arvo"] {
+    width: 2cm;
+}
+
+.itemform input[name="kuukausi"],
+input[name="testauspaiva"],
+select[id="kaupunki"] {
+    width: 4cm;
+}
