@@ -2,7 +2,6 @@ import React from 'react';
 import Content from '../Content/Content';
 import './Stats.css';
 import { Line, Doughnut, Bar } from 'react-chartjs-2';
-import stringHash from 'string-hash';
 
 function Stats(props) {
 
@@ -16,6 +15,11 @@ function Stats(props) {
     return groupedData;
   }
 
+  const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+  const randomByte = () => randomNumber(0, 255)
+  const randomPercent = () => (randomNumber(50, 100) * 0.01).toFixed(2)
+  const randomCssRgba = () => `rgba(${[randomByte(), randomByte(), randomByte(), randomPercent()].join(',')})`
+
   let groupedData = props.data.reduce(reducer, []);
 
   let doughnutData = {
@@ -23,9 +27,7 @@ function Stats(props) {
     datasets: [
       {
       data: groupedData.map(item => item.arvo),
-      backgroundColor: [ '#ffd700',
-        groupedData.slice(3).map(item => "hsl(" + (stringHash(item.kaupunki) % 360) + ", 80%, 70%)")
-      ]
+      backgroundColor: randomCssRgba
     }
     ]
 
@@ -34,10 +36,10 @@ function Stats(props) {
   let linedata = props.data.map( item => ({x: item.testauspaiva, y: item.arvo}));
 
 
-  const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
-  const randomByte = () => randomNumber(0, 255)
-  const randomPercent = () => (randomNumber(50, 100) * 0.01).toFixed(2)
-  const randomCssRgba = () => `rgba(${[randomByte(), randomByte(), randomByte(), randomPercent()].join(',')})`
+  const randomNumber1 = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+  const randomByte1 = () => randomNumber1(0, 255)
+  const randomPercent1 = () => (randomNumber1(50, 100) * 0.01).toFixed(2)
+  const randomCssRgba1 = () => `rgba(${[randomByte1(), randomByte1(), randomByte1(), randomPercent1()].join(',')})`
 
   let barData = {
           labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
@@ -58,7 +60,7 @@ function Stats(props) {
               19,
               0
             ],
-            backgroundColor: randomCssRgba,
+            backgroundColor: randomCssRgba1,
             borderWidth: 2,
         barThickness: 'flex',
         maxBarThickness: 8,
